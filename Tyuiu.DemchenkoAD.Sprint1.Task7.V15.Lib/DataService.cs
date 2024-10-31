@@ -5,8 +5,7 @@ namespace Tyuiu.DemchenkoAD.Sprint1.Task7.V15.Lib
     {
         public double Calculate(double x)
         {
-            double res = Math.Pow(3, 2) - Math.Pow(3, 3) - Math.Cos(Math.Pow(2, 3)) + (7 * Math.Pow(2, 2) / Math.Pow(2, 3)) - (15 * 2);
-          
+            var res = Math.Round((Math.Abs(Math.Pow(x, 2) - Math.Pow(x, 3))) - ((Math.Cos(Math.Pow(x, 3)) + 7 * (Math.Pow(x, 2))) / ((Math.Pow(x, 3)) - 15 * x)), 3);
             return res;
 
         }
