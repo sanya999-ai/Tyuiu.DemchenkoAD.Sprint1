@@ -9,7 +9,7 @@ namespace Tyuiu.DemchenkoAD.Sprint1.Task6.V6.Lib
                 string[] arrOfStr = value.Split(' ');
 
 
-                string res = "";
+                string res = " ";
 
 
                 foreach (string a in arrOfStr)
