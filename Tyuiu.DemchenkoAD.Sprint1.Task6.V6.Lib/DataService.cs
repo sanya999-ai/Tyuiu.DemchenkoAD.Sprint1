@@ -5,19 +5,18 @@ namespace Tyuiu.DemchenkoAD.Sprint1.Task6.V6.Lib
     {
         public string DeleteFirstLetter(string value)
         {
-            
-                string[] arrOfStr = value.Split(' ');
+
+            string[] s = value.Split(' ');
+            string y = "";
+            for (int i = 0; i < s.Length; i++)
+            {
+                value = s[i].Substring(1);
+                y += " " + value;
 
 
-                string res = " ";
-
-
-                foreach (string a in arrOfStr)
-                {
-                    res += a.Substring(1, a.Length - 1) + "";
-                }
-
-                return res;
             }
+            y = y.Substring(1);
+            return y;
+        }
     }
 }
